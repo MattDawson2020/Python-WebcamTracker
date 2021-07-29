@@ -39,6 +39,9 @@ while True:
         cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 3)
             
     status_list.append(status)
+
+    # status_list=status_list[-2:]
+
     #record the status changes (when movement enters frame) and append to the list
     # the following loop checks for when movement enters or leave the screens and records timestamps
     if len(status_list) > 1:
